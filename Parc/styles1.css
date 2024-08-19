@@ -1,0 +1,131 @@
+body {
+    font-family: 'Times New Roman', serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/one_piece.jpg);
+    background-size:contain;
+    background-position: center;
+}
+
+header {
+    background-color: rgb(163, 13, 40); 
+    color: white;
+    padding: 35px;
+    text-align: center;
+    border-bottom: 4px solid white; 
+}
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav {
+    background-color: white; 
+    overflow: hidden;
+}
+nav a {
+    float: right;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: white; 
+    color: #000;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+#home {
+    background-color: white; 
+    border: 10px solid rgb(163, 13, 40); 
+    padding: 20px; 
+    margin: 20px 0; 
+}
+#home p{
+    font-size: 1.0em;
+}
+.stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.history {
+    background-color: white;
+    border: 10px solid rgb(163, 13, 40); 
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    align-items: center;
+}
+
+.history-description {
+    flex: 1;
+    margin: 20px;
+    text-align: left;
+}
+
+.history-description h2 {
+    text-align: center;
+}
+
+.friend {
+    background-color: white; 
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border: 10px solid rgb(163, 13, 40);
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.crew-member {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+.crew img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer;
+    
+}
+.personajes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.personajes {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+}
+

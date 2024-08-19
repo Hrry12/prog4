@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist Tracker</title>
+</head>
+<body>
+  <header>
+    <h1>Checklist Tracker</h1>
+  </header>
+  <main>
+    <section id="tareas por hacer">
+      <h2>Tareas por hacer</h2>
+      <ul id="lista de tareas por hacer">
+      </ul>
+    </section>
+    <section id="tareas en progreso">
+      <h2>Tareas en progreso</h2>
+      <ul id="lista de tareas en progreso">
+      </ul> 
+    </section>
+    <section id="tareas terminadas">
+      <h2>Tareas terminadas</h2>
+      <ul id="lista de tareas terminadas">
+      </ul>
+    </section>
+    <button id="btn de nueva tarea">Nueva tarea</button>
+  </main>
+  <div id="nueva_tarea" class="modal">
+    <div class="modal_contenido">
+      <h2>Crear nueva tarea</h2>
+      <form id="form_nueva_tarea" action="guardar_tarea.php" method="post">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" rows="5"></textarea>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+          <option value="por_hacer">Por hacer</option>
+          <option value="en_progreso">En progreso</option>
+          <option value="terminada">Terminada</option>
+        </select>
+
+        <label for="fecha_compromiso">Fecha de compromiso:</label>
+        <input type="date" id="fecha_compromiso" name="fecha_compromiso">
+
+        <label for="responsable">Responsable:</label>
+        <input type="text" id="responsable" name="responsable">
+
+        <label for="tipo_tarea">Tipo de tarea:</label>
+        <input type="text" id="tipo_tarea" name="tipo_tarea">
+
+        <button type="submit">Guardar</button>
+      </form>
+      <button id="btn-cerrar-modal">X</button>
+    </div>
+  </div>
+  <div id="modal_editar_tarea" class="modal">
+    <div class="modal_contenido">
+      <h2>Editar tarea</h2>
+      <form id="form-editar-tarea" action="editar_tarea.php" method="post">
+        <button type="submit">Guardar cambios</button>
+      </form>
+      <button id="btn-cerrar-modal-editar">X</button>
+      
+      <button class="btn-eliminar">Eliminar</button>
+    </div>
+  </div>
+</body>
+</html>
