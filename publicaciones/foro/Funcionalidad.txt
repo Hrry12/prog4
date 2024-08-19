@@ -1,0 +1,26 @@
+-Cree una base de datos llamado "foro"
+
+-En la base de datos hay dos tablas
+  *roles: esta contiene 2 columnas el id y el rol(1 user o 2 admin)
+  *users: tienes las columnas de id, username, password, rol_id(foreign key) de la tabla roles y el createad_at (fecha y hora de registro del usuario)
+
+-Para asignar el rol del usuario que se registró, hay que ir a la base de datos, luego seleccionan el usuario y le dan click en editar.
+
+-Para testear el programa, cree 2 usuarios uno llamado "vayne" que le asigné el rol de "admin" y el otro "ashe" que es el rol de "user"
+username: vayne		| user: ashe
+password: admin 	| password: admin
+
+-AL EJECUTAR EL PROGRAMA HACE LO SIGUIENTE:
+*Registra un usuario, luego de que el usuario se registre nos lleva a lo siguiente
+*Iniciar sesion
+Antes de iniciar sesion hay que asignarle el rol en la base de datos, como ya lo dije en los puntos anteriores
+Cuando inicien sesion, mostrará un mensaje sobre que usuario ingresó y el rol que se le asignó
+
+-------------------------------------------------------------------------------------------------------------------
+Lo que haría falta por hacer desde mi punto de vista
+- Dependiendo del usuario que ingrese(ya sea admin o user), muestre una vista diferente,
+es decir, el admin puede o pueda realizar todas las tareas de la pagina web, mientras el user solo pueda
+editar o eliminar las publicaciones o comentarios.
+
+*Si no se entendió pueden observar el punto que me tocó hacer el de admin
+-Agregar css
