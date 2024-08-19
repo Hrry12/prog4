@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+        .muñeco {
+            margin: 0 auto 20px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: url('/mnt/data/plantilla.jpg'); /* Ruta a tu imagen */
+            background-size: cover;
+            background-position: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .nombre {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form-group label {
+            display: none;
+        }
+        .form-group input {
+            width: calc(100% - 40px);
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+        .form-group i {
+            font-size: 20px;
+            color: #888;
+            width: 30px;
+            text-align: center;
+        }
+        .form-group .half-width {
+            width: calc(50% - 20px);
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <div class="avatar"></div>
+        <h2>Registration Form</h2>
+        <form action="quiz3.php" method="post">
+            <div class="name-container">
+                <input class="half-width" type="text" id="first" name="first_name" placeholder="First Name" required>
+                <input class="half-width" type="text" id="last" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="username">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="email">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="password">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="confirmed">
+                <input type="password" id="confirmed" name="confirmed_password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit">OK</button>
+        </form>

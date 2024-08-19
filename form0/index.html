@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Operaciones Matemáticas</title>
+</head>
+<body>
+    <h2>Ejemplos básicos</h2>
+    <form action="procesar.php" method="post" enctype="multipart/form-data">
+        <!-- Elementos de entrada aquí -->
+        <input type="text" name="nombre" placeholder="Nombre">
+        <br>
+        <!-- Checkbox -->
+        <input type="checkbox" name="intereses[]" value="deportes"> Deportes
+        <input type="checkbox" name="intereses[]" value="tecnologia"> Tecnología
+        <input type="checkbox" name="intereses[]" value="Otros"> Otros
+        <br>
+        <!-- Radio Button -->
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="femenino"> Femenino
+        <input type="radio" name="sexo" value="no binario"> No Binario
+        <input type="radio" name="sexo" value="Otros"> Otros
+        <br>
+        <br>
+        <!-- Textarea -->
+        <textarea name="comentario" placeholder="Escribe un comentario"></textarea>
+        <br><br>
+        <!-- Select (Dropdown) -->
+        <select name="pais">
+            <option value="none">-Seleccione</option>
+            <option value="usa">Estados Unidos</option>
+            <option value="canada">Canadá</option>
+            <option value="mexico">México</option>
+            <option value="panama">Panamá</option>
+        </select>
+        <br><br>
+        <!-- File input -->
+        <input type="file" name="archivo">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
